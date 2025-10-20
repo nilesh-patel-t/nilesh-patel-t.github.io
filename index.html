@@ -5,52 +5,52 @@
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>Nilesh Patel — Cybersecurity Portfolio</title>
   <meta name="description" content="Portfolio of Nilesh Patel — Final Year B.Tech CSE | Cybersecurity" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
   <style>
     :root{
-      --bg:#0b0f12; --card:#0f1418; --muted:#9aa3a8; --accent:#6ef3c5; --glass:rgba(255,255,255,0.03);
+      --bg:#0b0f12; --card:#101417; --muted:#a0a8ad; --accent:#6ef3c5; --glass:rgba(255,255,255,0.04);
       --maxw:1000px; --pad:20px; --radius:14px;
-      font-family: Inter, ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+      font-family:'Poppins',sans-serif;
     }
-    *{box-sizing:border-box}
-    html,body{height:100%}
-    body{
-      margin:0; background:linear-gradient(180deg,var(--bg),#071018); color:#e7eef1; -webkit-font-smoothing:antialiased; -moz-osx-font-smoothing:grayscale;
-      display:flex; align-items:flex-start; justify-content:center; padding:48px 18px; gap:20px;
-    }
+    *{box-sizing:border-box;margin:0;padding:0}
+    body{background:linear-gradient(180deg,var(--bg),#071018);color:#e7eef1;-webkit-font-smoothing:antialiased;display:flex;justify-content:center;padding:40px 16px;}
     .wrap{width:100%;max-width:var(--maxw)}
-    header{display:flex;align-items:center;justify-content:space-between;gap:16px;margin-bottom:24px}
+
+    header{display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:16px;margin-bottom:32px}
     .brand{display:flex;align-items:center;gap:12px}
     .avatar{width:56px;height:56px;border-radius:12px;background:linear-gradient(135deg,#132026,#1b2b2d);display:grid;place-items:center;font-weight:700}
-    h1{margin:0;font-size:20px}
-    p.lead{margin:0;color:var(--muted)}
-
+    h1{font-size:22px}
+    p.lead{color:var(--muted);font-size:14px}
     nav a{color:var(--muted);text-decoration:none;margin-left:14px;font-size:14px}
     nav a:hover{color:var(--accent)}
 
-    main{display:grid;grid-template-columns:1fr 360px;gap:20px}
+    main{display:grid;grid-template-columns:1fr 350px;gap:20px}
+    .card{background:var(--card);padding:18px;border-radius:var(--radius);box-shadow:0 4px 16px rgba(0,0,0,0.4);border:1px solid rgba(255,255,255,0.05)}
 
-    .card{background:linear-gradient(180deg,var(--card),#0c1113);padding:18px;border-radius:var(--radius);box-shadow:0 6px 24px rgba(2,6,8,0.6);border:1px solid rgba(255,255,255,0.02)}
-
-    .intro{display:flex;gap:18px;align-items:flex-start}
-    .intro .meta{flex:1}
+    .intro{display:flex;gap:18px;align-items:flex-start;margin-bottom:20px}
     .tags{display:flex;gap:8px;flex-wrap:wrap;margin-top:12px}
-    .tag{background:var(--glass);padding:6px 9px;border-radius:999px;font-size:13px;color:var(--muted)}
+    .tag{background:var(--glass);padding:6px 10px;border-radius:999px;font-size:13px;color:var(--muted)}
 
-    .projects{display:grid;gap:12px}
-    .project{display:flex;flex-direction:column;gap:8px;padding:12px;border-radius:10px;background:linear-gradient(180deg,rgba(255,255,255,0.01),transparent)}
+    h2,h3,h4{margin-bottom:10px}
+    h2{font-size:18px;color:var(--accent)}
+    h3{font-size:16px;color:var(--accent)}
+
+    .projects,.reports{display:flex;flex-direction:column;gap:10px}
+    .project,.report{padding:14px;border-radius:10px;background:linear-gradient(180deg,rgba(255,255,255,0.02),transparent)}
     .project h3{margin:0;font-size:15px}
     .muted{color:var(--muted);font-size:13px}
+    .btn{display:inline-block;padding:8px 12px;border-radius:10px;background:linear-gradient(90deg,var(--accent),#53e6c0);color:#042420;text-decoration:none;font-weight:600;margin-top:6px}
+
+    .skills{display:flex;flex-wrap:wrap;gap:10px;margin-top:10px}
+    .skill{padding:8px 12px;border-radius:20px;background:rgba(255,255,255,0.04);font-size:13px;color:var(--accent)}
 
     aside .card + .card{margin-top:12px}
     .cert-list{display:flex;flex-direction:column;gap:8px}
-    .cert{padding:10px;border-radius:8px;background:rgba(255,255,255,0.02)}
+    .cert{padding:10px;border-radius:8px;background:rgba(255,255,255,0.03)}
 
-    footer{margin-top:20px;text-align:center;color:var(--muted);font-size:13px}
+    footer{text-align:center;color:var(--muted);font-size:13px;margin-top:24px}
 
-    .btn{display:inline-block;padding:8px 12px;border-radius:10px;background:linear-gradient(90deg,var(--accent),#53e6c0);color:#042420;text-decoration:none;font-weight:600}
-
-    /* responsive */
-    @media (max-width:900px){main{grid-template-columns:1fr}aside{order:2}}
+    @media(max-width:900px){main{grid-template-columns:1fr}nav{text-align:center;width:100%}h1{font-size:20px}}
   </style>
 </head>
 <body>
@@ -64,9 +64,10 @@
         </div>
       </div>
       <nav>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
         <a href="#projects">Projects</a>
         <a href="#reports">Reports</a>
-        <a href="#certs">Certifications</a>
         <a href="#contact">Contact</a>
       </nav>
     </header>
@@ -74,77 +75,95 @@
     <main>
       <section>
         <div class="card intro">
-          <div class="meta">
-            <h2 style="margin:0 0 8px 0">Hello — I’m Nilesh</h2>
-            <p class="muted">I build tools and reports focused on penetration testing, automated network auditing, and hands-on research. I’m open to internships and entry-level roles in cybersecurity.</p>
+          <div>
+            <h2>Hello — I’m Nilesh</h2>
+            <p class="muted">I’m passionate about ethical hacking, penetration testing, and cybersecurity research. My work focuses on building tools for automated network auditing and vulnerability assessments, blending hands-on security with code-driven solutions.</p>
             <div class="tags">
-              <div class="tag">Pentesting</div>
+              <div class="tag">Penetration Testing</div>
               <div class="tag">Network Security</div>
-              <div class="tag">Tooling / Python</div>
-              <div class="tag">CTF Writeups</div>
+              <div class="tag">Python Tooling</div>
+              <div class="tag">Linux & Metasploit</div>
             </div>
           </div>
         </div>
 
-        <h3 id="projects" style="margin-top:18px;color:var(--muted);font-size:14px">Selected Projects</h3>
-        <div class="projects">
-          <div class="project card">
-            <h3>Automated Penetration Testing Toolkit</h3>
-            <div class="muted">Final-year project — CLI + planned GUI. Features automated enumeration and reporting.</div>
-            <div style="margin-top:8px"><a class="btn" href="#">View repo</a></div>
-          </div>
+        <div id="about" class="card">
+          <h2>About Me</h2>
+          <p class="muted">I’m a final-year B.Tech CSE student with a deep interest in cybersecurity. I love exploring system vulnerabilities, performing network penetration tests, and building my own tools to automate security audits. My goal is to pursue a professional career in cybersecurity and contribute to building safer digital environments.</p>
+        </div>
 
-          <div class="project card">
-            <h3>Network Security Audit Tool</h3>
-            <div class="muted">A script to check common misconfigurations, run basic scans, and export results to PDF.</div>
-            <div style="margin-top:8px"><a class="btn" href="#">View repo</a></div>
-          </div>
-
-          <div class="project card">
-            <h3>CTF Writeups</h3>
-            <div class="muted">Collection of CTF challenge writeups and technical notes.</div>
-            <div style="margin-top:8px"><a class="btn" href="#">Read writeups</a></div>
+        <div id="skills" class="card">
+          <h2>Technical Skills</h2>
+          <div class="skills">
+            <div class="skill">Python</div>
+            <div class="skill">Bash</div>
+            <div class="skill">Metasploit</div>
+            <div class="skill">Nmap</div>
+            <div class="skill">Burp Suite</div>
+            <div class="skill">Wireshark</div>
+            <div class="skill">SQL Injection</div>
+            <div class="skill">Linux Administration</div>
+            <div class="skill">OWASP ZAP</div>
           </div>
         </div>
 
-        <h3 id="reports" style="margin-top:18px;color:var(--muted);font-size:14px">Redacted Reports</h3>
-        <div style="display:flex;flex-direction:column;gap:10px;margin-top:10px">
-          <a class="card" href="reports/sample-pentest-report.pdf" target="_blank">Sample Pentest Report — Redacted (PDF)</a>
-          <a class="card" href="reports/network-audit-report.pdf" target="_blank">Network Audit Report — Redacted (PDF)</a>
+        <div id="projects" class="card">
+          <h2>Projects</h2>
+          <div class="projects">
+            <div class="project">
+              <h3>Automated Penetration Testing Toolkit</h3>
+              <div class="muted">Final-year project — combines CLI and GUI plans for network scanning, exploitation, and report generation.</div>
+              <a class="btn" href="projects/toolkit/">View Project</a>
+            </div>
+            <div class="project">
+              <h3>Network Security Audit Tool</h3>
+              <div class="muted">A lightweight tool for small networks that performs automated vulnerability scanning and misconfiguration checks.</div>
+              <a class="btn" href="projects/audit-tool/">View Project</a>
+            </div>
+            <div class="project">
+              <h3>CTF Writeups</h3>
+              <div class="muted">A growing collection of Capture The Flag (CTF) challenge writeups showcasing exploitation, forensics, and OSINT skills.</div>
+              <a class="btn" href="projects/ctf-writeups/">Explore</a>
+            </div>
+          </div>
         </div>
 
+        <div id="reports" class="card">
+          <h2>Reports</h2>
+          <div class="reports">
+            <a class="report" href="reports/sample-pentest-report.pdf" target="_blank">Sample Pentest Report — Redacted (PDF)</a>
+            <a class="report" href="reports/network-audit-report.pdf" target="_blank">Network Audit Report — Redacted (PDF)</a>
+          </div>
+        </div>
       </section>
 
       <aside>
-        <div class="card">
-          <h4 style="margin:0 0 8px 0">Contact</h4>
-          <div class="muted">Email: <a href="mailto:nilesh@example.com" style="color:var(--accent);text-decoration:none">nilesh@example.com</a></div>
-          <div style="margin-top:8px"><a href="https://github.com/YOUR-GITHUB" target="_blank" class="muted">GitHub</a> · <a href="https://www.linkedin.com/in/YOUR-LINKEDIN" target="_blank" class="muted">LinkedIn</a></div>
+        <div id="contact" class="card">
+          <h3>Contact</h3>
+          <div class="muted">Email: <a href="mailto:nileshpat05@gmail.com" style="color:var(--accent);text-decoration:none">nileshpat05@gmail.com</a></div>
+          <div style="margin-top:8px"><a href="https://github.com/nilesh-patel-t" target="_blank" class="muted">GitHub</a> · <a href="https://www.linkedin.com/in/nilesh-patel-2126b8363" target="_blank" class="muted">LinkedIn</a></div>
         </div>
 
-        <div class="card" id="certs">
-          <h4 style="margin:0 0 8px 0">Certifications</h4>
+        <div class="card">
+          <h3>Certifications</h3>
           <div class="cert-list">
             <div class="cert">Fortinet — Fundamentals of Cybersecurity</div>
-            <div class="cert">[Course name] — [Platform]</div>
+            <div class="cert">Wazuh Manager hands on by HaxCamp</div>
           </div>
         </div>
 
         <div class="card">
-          <h4 style="margin:0 0 8px 0">Quick Links</h4>
-          <div style="display:flex;flex-direction:column;gap:8px">
-            <a class="muted" href="projects/">All projects</a>
-            <a class="muted" href="blog/">Blog</a>
-            <a class="muted" href="#">Resume (PDF)</a>
-          </div>
+          <h3>Quick Links</h3>
+          <a class="muted" href="projects/">All Projects</a><br>
+          <a class="muted" href="reports/">Reports</a><br>
+          <a class="muted" href="#">Resume (PDF)</a>
         </div>
-
       </aside>
     </main>
 
     <footer>
-      <div>Built by Nilesh Patel • Last updated: <!-- update this --> </div>
-      <div style="margin-top:6px;color:var(--muted)">Tip: keep sensitive client data redacted before publishing reports.</div>
+      Built by Nilesh Patel • Last updated: October 2025<br>
+      <span style="color:var(--muted)">Tip: Always redact sensitive client data before publishing reports.</span>
     </footer>
   </div>
 </body>
