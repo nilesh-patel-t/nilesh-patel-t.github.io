@@ -1,0 +1,151 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Nilesh Patel — Cybersecurity Portfolio</title>
+  <meta name="description" content="Portfolio of Nilesh Patel — Final Year B.Tech CSE | Cybersecurity" />
+  <style>
+    :root{
+      --bg:#0b0f12; --card:#0f1418; --muted:#9aa3a8; --accent:#6ef3c5; --glass:rgba(255,255,255,0.03);
+      --maxw:1000px; --pad:20px; --radius:14px;
+      font-family: Inter, ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+    }
+    *{box-sizing:border-box}
+    html,body{height:100%}
+    body{
+      margin:0; background:linear-gradient(180deg,var(--bg),#071018); color:#e7eef1; -webkit-font-smoothing:antialiased; -moz-osx-font-smoothing:grayscale;
+      display:flex; align-items:flex-start; justify-content:center; padding:48px 18px; gap:20px;
+    }
+    .wrap{width:100%;max-width:var(--maxw)}
+    header{display:flex;align-items:center;justify-content:space-between;gap:16px;margin-bottom:24px}
+    .brand{display:flex;align-items:center;gap:12px}
+    .avatar{width:56px;height:56px;border-radius:12px;background:linear-gradient(135deg,#132026,#1b2b2d);display:grid;place-items:center;font-weight:700}
+    h1{margin:0;font-size:20px}
+    p.lead{margin:0;color:var(--muted)}
+
+    nav a{color:var(--muted);text-decoration:none;margin-left:14px;font-size:14px}
+    nav a:hover{color:var(--accent)}
+
+    main{display:grid;grid-template-columns:1fr 360px;gap:20px}
+
+    .card{background:linear-gradient(180deg,var(--card),#0c1113);padding:18px;border-radius:var(--radius);box-shadow:0 6px 24px rgba(2,6,8,0.6);border:1px solid rgba(255,255,255,0.02)}
+
+    .intro{display:flex;gap:18px;align-items:flex-start}
+    .intro .meta{flex:1}
+    .tags{display:flex;gap:8px;flex-wrap:wrap;margin-top:12px}
+    .tag{background:var(--glass);padding:6px 9px;border-radius:999px;font-size:13px;color:var(--muted)}
+
+    .projects{display:grid;gap:12px}
+    .project{display:flex;flex-direction:column;gap:8px;padding:12px;border-radius:10px;background:linear-gradient(180deg,rgba(255,255,255,0.01),transparent)}
+    .project h3{margin:0;font-size:15px}
+    .muted{color:var(--muted);font-size:13px}
+
+    aside .card + .card{margin-top:12px}
+    .cert-list{display:flex;flex-direction:column;gap:8px}
+    .cert{padding:10px;border-radius:8px;background:rgba(255,255,255,0.02)}
+
+    footer{margin-top:20px;text-align:center;color:var(--muted);font-size:13px}
+
+    .btn{display:inline-block;padding:8px 12px;border-radius:10px;background:linear-gradient(90deg,var(--accent),#53e6c0);color:#042420;text-decoration:none;font-weight:600}
+
+    /* responsive */
+    @media (max-width:900px){main{grid-template-columns:1fr}aside{order:2}}
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <div class="brand">
+        <div class="avatar">NP</div>
+        <div>
+          <h1>Nilesh Patel</h1>
+          <p class="lead">Final Year B.Tech CSE — Aspiring Cybersecurity Analyst</p>
+        </div>
+      </div>
+      <nav>
+        <a href="#projects">Projects</a>
+        <a href="#reports">Reports</a>
+        <a href="#certs">Certifications</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </header>
+
+    <main>
+      <section>
+        <div class="card intro">
+          <div class="meta">
+            <h2 style="margin:0 0 8px 0">Hello — I’m Nilesh</h2>
+            <p class="muted">I build tools and reports focused on penetration testing, automated network auditing, and hands-on research. I’m open to internships and entry-level roles in cybersecurity.</p>
+            <div class="tags">
+              <div class="tag">Pentesting</div>
+              <div class="tag">Network Security</div>
+              <div class="tag">Tooling / Python</div>
+              <div class="tag">CTF Writeups</div>
+            </div>
+          </div>
+        </div>
+
+        <h3 id="projects" style="margin-top:18px;color:var(--muted);font-size:14px">Selected Projects</h3>
+        <div class="projects">
+          <div class="project card">
+            <h3>Automated Penetration Testing Toolkit</h3>
+            <div class="muted">Final-year project — CLI + planned GUI. Features automated enumeration and reporting.</div>
+            <div style="margin-top:8px"><a class="btn" href="#">View repo</a></div>
+          </div>
+
+          <div class="project card">
+            <h3>Network Security Audit Tool</h3>
+            <div class="muted">A script to check common misconfigurations, run basic scans, and export results to PDF.</div>
+            <div style="margin-top:8px"><a class="btn" href="#">View repo</a></div>
+          </div>
+
+          <div class="project card">
+            <h3>CTF Writeups</h3>
+            <div class="muted">Collection of CTF challenge writeups and technical notes.</div>
+            <div style="margin-top:8px"><a class="btn" href="#">Read writeups</a></div>
+          </div>
+        </div>
+
+        <h3 id="reports" style="margin-top:18px;color:var(--muted);font-size:14px">Redacted Reports</h3>
+        <div style="display:flex;flex-direction:column;gap:10px;margin-top:10px">
+          <a class="card" href="reports/sample-pentest-report.pdf" target="_blank">Sample Pentest Report — Redacted (PDF)</a>
+          <a class="card" href="reports/network-audit-report.pdf" target="_blank">Network Audit Report — Redacted (PDF)</a>
+        </div>
+
+      </section>
+
+      <aside>
+        <div class="card">
+          <h4 style="margin:0 0 8px 0">Contact</h4>
+          <div class="muted">Email: <a href="mailto:nilesh@example.com" style="color:var(--accent);text-decoration:none">nilesh@example.com</a></div>
+          <div style="margin-top:8px"><a href="https://github.com/YOUR-GITHUB" target="_blank" class="muted">GitHub</a> · <a href="https://www.linkedin.com/in/YOUR-LINKEDIN" target="_blank" class="muted">LinkedIn</a></div>
+        </div>
+
+        <div class="card" id="certs">
+          <h4 style="margin:0 0 8px 0">Certifications</h4>
+          <div class="cert-list">
+            <div class="cert">Fortinet — Fundamentals of Cybersecurity</div>
+            <div class="cert">[Course name] — [Platform]</div>
+          </div>
+        </div>
+
+        <div class="card">
+          <h4 style="margin:0 0 8px 0">Quick Links</h4>
+          <div style="display:flex;flex-direction:column;gap:8px">
+            <a class="muted" href="projects/">All projects</a>
+            <a class="muted" href="blog/">Blog</a>
+            <a class="muted" href="#">Resume (PDF)</a>
+          </div>
+        </div>
+
+      </aside>
+    </main>
+
+    <footer>
+      <div>Built by Nilesh Patel • Last updated: <!-- update this --> </div>
+      <div style="margin-top:6px;color:var(--muted)">Tip: keep sensitive client data redacted before publishing reports.</div>
+    </footer>
+  </div>
+</body>
+</html>
