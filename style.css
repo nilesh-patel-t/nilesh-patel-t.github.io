@@ -1,0 +1,132 @@
+/* ==== GENERAL STYLES ==== */
+body {
+  background-color: #0d0d0d;
+  color: #e0e0e0;
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+h1, h2, h3 {
+  color: #00adb5;
+}
+
+a {
+  color: #00adb5;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* ==== HEADER ==== */
+header {
+  background: #111;
+  padding: 2rem 0;
+  text-align: center;
+  border-bottom: 1px solid #222;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 2rem;
+}
+
+header p {
+  color: #ccc;
+  font-size: 1rem;
+}
+
+.links a {
+  color: #00adb5;
+  margin: 0 6px;
+  font-size: 0.95rem;
+}
+
+.links a:hover {
+  color: #00c7c7;
+}
+
+/* ==== SECTIONS ==== */
+section {
+  max-width: 900px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+}
+
+section h2 {
+  border-left: 4px solid #00adb5;
+  padding-left: 10px;
+  margin-bottom: 1rem;
+}
+
+/* ==== ABOUT ==== */
+#about p {
+  color: #ccc;
+  line-height: 1.6;
+}
+
+/* ==== SKILLS ==== */
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 15px;
+  margin-top: 1rem;
+}
+
+.skill {
+  background: #111;
+  border: 1px solid #222;
+  padding: 0.8rem;
+  text-align: center;
+  border-radius: 8px;
+  color: #00adb5;
+  font-weight: 500;
+  transition: 0.3s ease;
+}
+
+.skill:hover {
+  background: #00adb5;
+  color: #fff;
+  box-shadow: 0 0 12px rgba(0,173,181,0.3);
+  transform: translateY(-3px);
+}
+
+/* ==== PROJECTS & CERTIFICATES ==== */
+.project, .certificate {
+  background: #111;
+  border: 1px solid #222;
+  padding: 1rem;
+  border-radius: 10px;
+  margin-bottom: 1.5rem;
+  transition: 0.3s ease;
+}
+
+.project:hover, .certificate:hover {
+  border-color: #00adb5;
+  box-shadow: 0 0 12px rgba(0,173,181,0.3);
+}
+
+.button {
+  display: inline-block;
+  background: #00adb5;
+  color: #fff;
+  padding: 0.5rem 1rem;
+  border-radius: 6px;
+  text-decoration: none;
+  transition: 0.3s ease;
+}
+
+.button:hover {
+  background: #00c7c7;
+}
+
+/* ==== FOOTER ==== */
+footer {
+  text-align: center;
+  padding: 1.5rem 0;
+  border-top: 1px solid #222;
+  font-size: 0.9rem;
+  color: #999;
+}
