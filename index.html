@@ -5,93 +5,104 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Nilesh Patel | Cybersecurity Portfolio</title>
   <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
 </head>
 
 <body>
   <header>
-    <h1>Nilesh Patel</h1>
-    <p>Cybersecurity Enthusiast | Penetration Tester | Blue Team Learner</p>
-    <div class="links">
-      <a href="mailto:nileshpat05@gmail.com">📧 nileshpat05@gmail.com</a> |
-      <a href="https://www.linkedin.com/in/nilesh-patel-2126b8363" target="_blank">LinkedIn</a> |
-      <a href="https://github.com/nilesh-patel-t" target="_blank">GitHub</a>
-    </div>
+    <nav>
+      <h1>Nilesh Patel</h1>
+      <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#certificates">Certificates</a></li>
+        <li><a href="#resume">Resume</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+
+    <section class="hero">
+      <h2>Cybersecurity Enthusiast | Blue & Red Team Explorer</h2>
+      <p>Passionate about ethical hacking, threat analysis, and network security automation.</p>
+    </section>
   </header>
 
-  <section id="about">
-    <h2>About Me</h2>
-    <p>
-      I’m a final-year B.Tech CSE student passionate about cybersecurity and ethical hacking.
-      I love exploring penetration testing, blue team defense, and SIEM operations.
-      My goal is to build secure networks and automate security assessments for small to mid-sized environments.
-    </p>
-  </section>
-
-  <section id="skills">
-    <h2>Skills</h2>
-    <div class="skills-grid">
-      <div class="skill">Network Security</div>
-      <div class="skill">Vulnerability Assessment</div>
-      <div class="skill">Penetration Testing</div>
-      <div class="skill">Linux & Bash Scripting</div>
-      <div class="skill">Metasploit Framework</div>
-      <div class="skill">Burp Suite</div>
-      <div class="skill">Wireshark</div>
-      <div class="skill">Nmap</div>
-      <div class="skill">SQL Injection</div>
-      <div class="skill">OWASP ZAP</div>
-      <div class="skill">SIEM (Splunk, Wazuh)</div>
-      <div class="skill">Threat Analysis</div>
-      <div class="skill">Python for Security Automation</div>
-      <div class="skill">Pivoting & Post Exploitation</div>
-      <div class="skill">Incident Response</div>
-    </div>
-  </section>
-
-  <section id="projects">
-    <h2>Projects & Work</h2>
-    <div class="project">
-      <h3>Automated Penetration Testing Toolkit</h3>
+  <main>
+    <section id="about">
+      <h2>About Me</h2>
       <p>
-        A final-year project designed to automate reconnaissance, scanning, and exploitation processes for small networks.
-        Built using Python, Bash, and integrated with Nmap, Metasploit, and custom scripts.
+        I'm Nilesh Patel, a final-year B.Tech CSE student with a strong interest in cybersecurity.
+        I explore both offensive and defensive security — from penetration testing to SIEM threat monitoring.
+        Currently building my own automated penetration testing toolkit and learning advanced SOC operations.
       </p>
-      <a href="reports/pentest-report.pdf" class="button" target="_blank">View Pentest Report</a>
-    </div>
-  </section>
+    </section>
 
-  <section id="certificates">
-    <h2>Certificates</h2>
+    <section id="skills">
+      <h2>Skills</h2>
+      <div class="skills-grid">
+        <div>Penetration Testing</div>
+        <div>Network Security</div>
+        <div>Linux & Scripting</div>
+        <div>Vulnerability Assessment</div>
+        <div>SIEM & Threat Analysis</div>
+        <div>Incident Response</div>
+        <div>Python, Bash</div>
+        <div>Metasploit, Burp Suite, Nmap</div>
+      </div>
+    </section>
 
-    <div class="certificate">
-      <h3>Fortinet Fundamentals of Cybersecurity</h3>
-      <a href="certificates/fortinet-fundamentals.pdf" class="button" target="_blank">View Certificate</a>
-    </div>
+    <section id="projects">
+      <h2>Projects</h2>
+      <div class="card">
+        <h3>Automated Penetration Testing Toolkit</h3>
+        <p>A CLI-based toolkit designed to automate network and web application assessments for small office networks.</p>
+      </div>
+      <div class="card">
+        <h3>Network Security Audit Report</h3>
+        <p>Comprehensive audit report documenting findings, risk analysis, and mitigations for a simulated SME environment.</p>
+        <a class="btn" href="reports/pentest-report.pdf" target="_blank">View Report</a>
+      </div>
+    </section>
 
-    <div class="certificate">
-      <h3>Wazuh Manager Hands-On (HaxCamp)</h3>
-      <a href="certificates/wazuh-manager.pdf" class="button" target="_blank">View Certificate</a>
-    </div>
+    <section id="certificates">
+      <h2>Certificates</h2>
+      <div class="certificates-grid">
+        <div class="card">
+          <h3>Fortinet - Fundamentals of Cybersecurity</h3>
+          <a class="btn" href="certificates/fortinet.pdf" target="_blank">View Certificate</a>
+        </div>
+        <div class="card">
+          <h3>Wazuh Manager Hands-on - Haxcamp</h3>
+          <a class="btn" href="certificates/wazuh.pdf" target="_blank">View Certificate</a>
+        </div>
+        <div class="card">
+          <h3>Wireshark 3-Day Hands-on - Haxcamp</h3>
+          <a class="btn" href="certificates/wireshark.pdf" target="_blank">View Certificate</a>
+        </div>
+        <div class="card">
+          <h3>Splunk SIEM 3-Day Hands-on - Haxcamp</h3>
+          <a class="btn" href="certificates/splunk.pdf" target="_blank">View Certificate</a>
+        </div>
+      </div>
+    </section>
 
-    <div class="certificate">
-      <h3>Wireshark 3-Day Hands-On (HaxCamp)</h3>
-      <a href="certificates/wireshark-haxcamp.pdf" class="button" target="_blank">View Certificate</a>
-    </div>
+    <section id="resume">
+      <h2>Resume</h2>
+      <a class="btn" href="resume/nilesh_resume.pdf" target="_blank">Download Resume</a>
+    </section>
 
-    <div class="certificate">
-      <h3>Splunk SIEM 3-Day Hands-On (HaxCamp)</h3>
-      <a href="certificates/splunk-siem.pdf" class="button" target="_blank">View Certificate</a>
-    </div>
-  </section>
-
-  <section id="resume">
-    <h2>Resume</h2>
-    <p>Download my latest resume below:</p>
-    <a href="resume/Nilesh-Patel-Resume.pdf" class="button" target="_blank">Download Resume</a>
-  </section>
+    <section id="contact">
+      <h2>Contact</h2>
+      <p>Email: <a href="mailto:nileshpat05@gmail.com">nileshpat05@gmail.com</a></p>
+      <p>GitHub: <a href="https://github.com/nilesh-patel-t" target="_blank">github.com/nilesh-patel-t</a></p>
+      <p>LinkedIn: <a href="https://linkedin.com/in/nilesh-patel-2126b8363" target="_blank">linkedin.com/in/nilesh-patel-2126b8363</a></p>
+    </section>
+  </main>
 
   <footer>
-    <p>© 2025 Nilesh Patel | Built with 💻 & passion for cybersecurity</p>
+    <p>© 2025 Nilesh Patel | Crafted with ❤️ and curiosity for cybersecurity</p>
   </footer>
 </body>
 </html>
+
