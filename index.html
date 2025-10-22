@@ -1,174 +1,97 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Nilesh Patel — Cybersecurity Portfolio</title>
-  <meta name="description" content="Portfolio of Nilesh Patel — Final Year B.Tech CSE | Cybersecurity" />
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
-  <style>
-    :root{
-      --bg:#0b0f12; --card:#101417; --muted:#a0a8ad; --accent:#6ef3c5; --glass:rgba(255,255,255,0.04);
-      --maxw:1000px; --pad:20px; --radius:14px;
-      font-family:'Poppins',sans-serif;
-    }
-    *{box-sizing:border-box;margin:0;padding:0}
-    body{background:linear-gradient(180deg,var(--bg),#071018);color:#e7eef1;-webkit-font-smoothing:antialiased;display:flex;justify-content:center;padding:40px 16px;}
-    .wrap{width:100%;max-width:var(--maxw)}
-
-    header{display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:16px;margin-bottom:32px}
-    .brand{display:flex;align-items:center;gap:12px}
-    .avatar{width:56px;height:56px;border-radius:12px;background:linear-gradient(135deg,#132026,#1b2b2d);display:grid;place-items:center;font-weight:700}
-    h1{font-size:22px}
-    p.lead{color:var(--muted);font-size:14px}
-    nav a{color:var(--muted);text-decoration:none;margin-left:14px;font-size:14px}
-    nav a:hover{color:var(--accent)}
-
-    main{display:grid;grid-template-columns:1fr 350px;gap:20px}
-    .card{background:var(--card);padding:18px;border-radius:var(--radius);box-shadow:0 4px 16px rgba(0,0,0,0.4);border:1px solid rgba(255,255,255,0.05)}
-
-    .intro{display:flex;gap:18px;align-items:flex-start;margin-bottom:20px}
-    .tags{display:flex;gap:8px;flex-wrap:wrap;margin-top:12px}
-    .tag{background:var(--glass);padding:6px 10px;border-radius:999px;font-size:13px;color:var(--muted)}
-
-    h2,h3,h4{margin-bottom:10px}
-    h2{font-size:18px;color:var(--accent)}
-    h3{font-size:16px;color:var(--accent)}
-
-    .projects,.reports{display:flex;flex-direction:column;gap:10px}
-    .project,.report{padding:14px;border-radius:10px;background:linear-gradient(180deg,rgba(255,255,255,0.02),transparent)}
-    .project h3{margin:0;font-size:15px}
-    .muted{color:var(--muted);font-size:13px}
-    .btn{display:inline-block;padding:8px 12px;border-radius:10px;background:linear-gradient(90deg,var(--accent),#53e6c0);color:#042420;text-decoration:none;font-weight:600;margin-top:6px}
-
-    .skills{display:flex;flex-wrap:wrap;gap:10px;margin-top:10px}
-    .skill{padding:8px 12px;border-radius:20px;background:rgba(255,255,255,0.04);font-size:13px;color:var(--accent)}
-
-    aside .card + .card{margin-top:12px}
-    .cert-list{display:flex;flex-direction:column;gap:8px}
-    .cert{padding:10px;border-radius:8px;background:rgba(255,255,255,0.03)}
-
-    footer{text-align:center;color:var(--muted);font-size:13px;margin-top:24px}
-
-    @media(max-width:900px){main{grid-template-columns:1fr}nav{text-align:center;width:100%}h1{font-size:20px}}
-  </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Nilesh Patel | Cybersecurity Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
+
 <body>
-  <div class="wrap">
-    <header>
-      <div class="brand">
-        <div class="avatar">NP</div>
-        <div>
-          <h1>Nilesh Patel</h1>
-          <p class="lead">Final Year B.Tech CSE — Aspiring Cybersecurity Analyst</p>
-        </div>
-      </div>
-      <nav>
-        <a href="#about">About</a>
-        <a href="#skills">Skills</a>
-        <a href="#projects">Projects</a>
-        <a href="#reports">Reports</a>
-        <a href="#contact">Contact</a>
-      </nav>
-    </header>
+  <header>
+    <h1>Nilesh Patel</h1>
+    <p>Cybersecurity Enthusiast | Penetration Tester | Blue Team Learner</p>
+    <div class="links">
+      <a href="mailto:nileshpat05@gmail.com">📧 nileshpat05@gmail.com</a> |
+      <a href="https://www.linkedin.com/in/nilesh-patel-2126b8363" target="_blank">LinkedIn</a> |
+      <a href="https://github.com/nilesh-patel-t" target="_blank">GitHub</a>
+    </div>
+  </header>
 
-    <main>
-      <section>
-        <div class="card intro">
-          <div>
-            <h2>Hello — I’m Nilesh</h2>
-            <p class="muted">I’m passionate about ethical hacking, penetration testing, and cybersecurity research. My work focuses on building tools for automated network auditing and vulnerability assessments, blending hands-on security with code-driven solutions.</p>
-            <div class="tags">
-              <div class="tag">Penetration Testing</div>
-              <div class="tag">Network Security</div>
-              <div class="tag">Python Tooling</div>
-              <div class="tag">Linux & Metasploit</div>
-            </div>
-          </div>
-        </div>
+  <section id="about">
+    <h2>About Me</h2>
+    <p>
+      I’m a final-year B.Tech CSE student passionate about cybersecurity and ethical hacking.
+      I love exploring penetration testing, blue team defense, and SIEM operations.
+      My goal is to build secure networks and automate security assessments for small to mid-sized environments.
+    </p>
+  </section>
 
-        <div id="about" class="card">
-          <h2>About Me</h2>
-          <p class="muted">I’m a final-year B.Tech CSE student with a deep interest in cybersecurity. I love exploring system vulnerabilities, performing network penetration tests, and building my own tools to automate security audits. My goal is to pursue a professional career in cybersecurity and contribute to building safer digital environments.</p>
-        </div>
+  <section id="skills">
+    <h2>Skills</h2>
+    <div class="skills-grid">
+      <div class="skill">Network Security</div>
+      <div class="skill">Vulnerability Assessment</div>
+      <div class="skill">Penetration Testing</div>
+      <div class="skill">Linux & Bash Scripting</div>
+      <div class="skill">Metasploit Framework</div>
+      <div class="skill">Burp Suite</div>
+      <div class="skill">Wireshark</div>
+      <div class="skill">Nmap</div>
+      <div class="skill">SQL Injection</div>
+      <div class="skill">OWASP ZAP</div>
+      <div class="skill">SIEM (Splunk, Wazuh)</div>
+      <div class="skill">Threat Analysis</div>
+      <div class="skill">Python for Security Automation</div>
+      <div class="skill">Pivoting & Post Exploitation</div>
+      <div class="skill">Incident Response</div>
+    </div>
+  </section>
 
-        <div id="skills" class="card">
-          <h2>Technical Skills</h2>
-          <div class="skills">
-            <div class="skill">Python</div>
-            <div class="skill">Bash</div>
-            <div class="skill">Metasploit</div>
-            <div class="skill">Nmap</div>
-            <div class="skill">Burp Suite</div>
-            <div class="skill">Wireshark</div>
-            <div class="skill">SQL Injection</div>
-            <div class="skill">Linux Administration</div>
-            <div class="skill">OWASP ZAP</div>
-            <div class="skill">Splunk Enterprise</div>
-            <div class="skill">Wazuh Manager</div>
-            <div class="skill">Kali Linux</div>
-          </div>
-        </div>
+  <section id="projects">
+    <h2>Projects & Work</h2>
+    <div class="project">
+      <h3>Automated Penetration Testing Toolkit</h3>
+      <p>
+        A final-year project designed to automate reconnaissance, scanning, and exploitation processes for small networks.
+        Built using Python, Bash, and integrated with Nmap, Metasploit, and custom scripts.
+      </p>
+      <a href="reports/pentest-report.pdf" class="button" target="_blank">View Pentest Report</a>
+    </div>
+  </section>
 
-        <div id="projects" class="card">
-          <h2>Projects</h2>
-          <div class="projects">
-            <div class="project">
-              <h3>Automated Penetration Testing Toolkit</h3>
-              <div class="muted">Final-year project — combines CLI and GUI plans for network scanning, exploitation, and report generation.</div>
-              <a class="btn" href="projects/toolkit/">View Project</a>
-            </div>
-            <div class="project">
-              <h3>Network Security Audit Tool</h3>
-              <div class="muted">A lightweight tool for small networks that performs automated vulnerability scanning and misconfiguration checks.</div>
-              <a class="btn" href="projects/audit-tool/">View Project</a>
-            </div>
-            <div class="project">
-              <h3>CTF Writeups</h3>
-              <div class="muted">A growing collection of Capture The Flag (CTF) challenge writeups showcasing exploitation, forensics, and OSINT skills.</div>
-              <a class="btn" href="projects/ctf-writeups/">Explore</a>
-            </div>
-          </div>
-        </div>
+  <section id="certificates">
+    <h2>Certificates</h2>
 
-        <div id="reports" class="card">
-          <h2>Reports</h2>
-          <div class="reports">
-            <a class="report" href="reports/sample-pentest-report.pdf" target="_blank">Sample Pentest Report — Redacted (PDF)</a>
-            <a class="report" href="reports/network-audit-report.pdf" target="_blank">Network Audit Report — Redacted (PDF)</a>
-          </div>
-        </div>
-      </section>
+    <div class="certificate">
+      <h3>Fortinet Fundamentals of Cybersecurity</h3>
+      <a href="certificates/fortinet-fundamentals.pdf" class="button" target="_blank">View Certificate</a>
+    </div>
 
-      <aside>
-        <div id="contact" class="card">
-          <h3>Contact</h3>
-          <div class="muted">Email: <a href="mailto:nileshpat05@gmail.com" style="color:var(--accent);text-decoration:none">nileshpat05@gmail.com</a></div>
-          <div style="margin-top:8px"><a href="https://github.com/nilesh-patel-t" target="_blank" class="muted">GitHub</a> · <a href="https://www.linkedin.com/in/nilesh-patel-2126b8363" target="_blank" class="muted">LinkedIn</a></div>
-        </div>
+    <div class="certificate">
+      <h3>Wazuh Manager Hands-On (HaxCamp)</h3>
+      <a href="certificates/wazuh-manager.pdf" class="button" target="_blank">View Certificate</a>
+    </div>
 
-        <div class="card">
-          <h3>Certifications</h3>
-          <div class="cert-list">
-            <div class="cert">Fortinet — Fundamentals of Cybersecurity</div>
-            <div class="cert">Wazuh Manager hands on by HaxCamp</div>
-          </div>
-        </div>
+    <div class="certificate">
+      <h3>Wireshark 3-Day Hands-On (HaxCamp)</h3>
+      <a href="certificates/wireshark-haxcamp.pdf" class="button" target="_blank">View Certificate</a>
+    </div>
 
-        <div class="card">
-          <h3>Quick Links</h3>
-          <a class="muted" href="projects/">All Projects</a><br>
-          <a class="muted" href="reports/">Reports</a><br>
-          <a class="muted" href="#">Resume (PDF)</a>
-        </div>
-      </aside>
-    </main>
+    <div class="certificate">
+      <h3>Splunk SIEM 3-Day Hands-On (HaxCamp)</h3>
+      <a href="certificates/splunk-siem.pdf" class="button" target="_blank">View Certificate</a>
+    </div>
+  </section>
 
-    <footer>
-      Built by Nilesh Patel • Last updated: October 2025<br>
-      <span style="color:var(--muted)">Tip: Always redact sensitive client data before publishing reports.</span>
-    </footer>
-  </div>
+  <section id="resume">
+    <h2>Resume</h2>
+    <p>Download my latest resume below:</p>
+    <a href="resume/Nilesh-Patel-Resume.pdf" class="button" target="_blank">Download Resume</a>
+  </section>
+
+  <footer>
+    <p>© 2025 Nilesh Patel | Built with 💻 & passion for cybersecurity</p>
+  </footer>
 </body>
 </html>
-
