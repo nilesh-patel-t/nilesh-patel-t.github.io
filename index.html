@@ -1,125 +1,171 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>Nilesh Patel | Cybersecurity Portfolio</title>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=JetBrains+Mono&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css">
+
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&family=JetBrains+Mono&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
   <!-- NAVBAR -->
-  <nav>
-    <div class="logo">Nilesh Patel</div>
-    <ul>
-      <li><a href="#about">About</a></li>
-      <li><a href="#skills">Skills</a></li>
-      <li><a href="#projects">Projects</a></li>
-      <li><a href="#certificates">Certificates</a></li>
-      <li><a href="#resume">Resume</a></li>
-      <li><a href="#contact">Contact</a></li>
-    </ul>
-  </nav>
+  <header>
+    <nav class="nav">
+      <div class="nav-inner container">
+        <div class="brand">
+          <div class="logo">Nilesh Patel</div>
+        </div>
 
-  <!-- HERO SECTION -->
-  <section class="hero">
-    <h1>Nilesh Patel</h1>
-    <p>Cybersecurity Enthusiast | Blue & Red Team Explorer</p>
-  </section>
+        <!-- hamburger toggle -->
+        <button id="nav-toggle" aria-label="Toggle menu" class="nav-toggle">
+          <span></span><span></span><span></span>
+        </button>
+
+        <ul class="nav-links" id="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#certificates">Certificates</a></li>
+          <li><a href="#resume">Resume</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <div class="hero container">
+      <h1>Nilesh Patel</h1>
+      <p class="tagline">Cybersecurity Enthusiast | Blue &amp; Red Team Explorer</p>
+    </div>
+  </header>
 
   <main>
     <!-- ABOUT -->
-    <section id="about" class="side-section">
-      <div class="about-left">
-        <h2>About Me</h2>
-        <p>
-          I'm Nilesh Patel, a final-year B.Tech CSE student passionate about cybersecurity. I explore both offensive and defensive security, from penetration testing to SIEM threat monitoring. I am currently building an automated penetration testing toolkit and learning advanced SOC operations.
-        </p>
-      </div>
-      <div class="about-right">
-        <!-- optional image or placeholder -->
-        <img src="https://via.placeholder.com/300x300.png?text=Profile" alt="Profile Photo">
+    <section id="about" class="section">
+      <div class="container split">
+        <div class="split-left">
+          <h2>About Me</h2>
+          <p>
+            I'm Nilesh Patel, a final-year B.Tech CSE student passionate about cybersecurity.
+            I explore both offensive and defensive security — from penetration testing to SIEM threat monitoring.
+            Currently building an automated penetration testing toolkit and learning SOC operations.
+          </p>
+        </div>
+        <div class="split-right">
+          <!-- replace placeholder with your image later -->
+          <img src="https://via.placeholder.com/360x360.png?text=Profile" alt="Profile" />
+        </div>
       </div>
     </section>
 
     <!-- SKILLS -->
-    <section id="skills">
-      <h2>Skills</h2>
-      <div class="skills-grid">
-        <div>Penetration Testing</div>
-        <div>Network Security</div>
-        <div>Linux & Scripting</div>
-        <div>Vulnerability Assessment</div>
-        <div>SIEM & Threat Analysis</div>
-        <div>Incident Response</div>
-        <div>Python, Bash</div>
-        <div>Metasploit, Burp Suite, Nmap</div>
+    <section id="skills" class="section">
+      <div class="container">
+        <h2>Skills</h2>
+        <div class="skills-grid">
+          <div class="skill">Penetration Testing</div>
+          <div class="skill">Network Security</div>
+          <div class="skill">Linux &amp; Scripting</div>
+          <div class="skill">Vulnerability Assessment</div>
+          <div class="skill">SIEM &amp; Threat Analysis</div>
+          <div class="skill">Incident Response</div>
+          <div class="skill">Python, Bash</div>
+          <div class="skill">Metasploit, Burp, Nmap</div>
+        </div>
       </div>
     </section>
 
     <!-- PROJECTS -->
-    <section id="projects">
-      <h2>Projects</h2>
-      <div class="projects-grid">
-        <div class="card">
-          <h3>Automated Penetration Testing Toolkit</h3>
-          <p>A CLI-based toolkit to automate network and web application security assessments for small office networks.</p>
-        </div>
-        <div class="card">
-          <h3>Network Security Audit Report</h3>
-          <p>Comprehensive audit report documenting findings, risk analysis, and mitigations for a simulated SME environment.</p>
-          <a class="btn" href="reports/pentest-report.pdf" target="_blank">View Report</a>
+    <section id="projects" class="section">
+      <div class="container">
+        <h2>Projects & Reports</h2>
+        <div class="cards-grid">
+          <article class="card">
+            <h3>Automated Penetration Testing Toolkit</h3>
+            <p>A CLI toolkit focused on scanning, exploitation orchestration and report generation for small office networks.</p>
+          </article>
+
+          <article class="card">
+            <h3>Network Security Audit Report</h3>
+            <p>Redacted penetration test &amp; audit report for a small office network (relevant findings and mitigations).</p>
+            <a class="btn" href="reports/pentest-report.pdf" target="_blank" rel="noopener">View Report</a>
+          </article>
         </div>
       </div>
     </section>
 
     <!-- CERTIFICATES -->
-    <section id="certificates">
-      <h2>Certificates</h2>
-      <div class="certificates-grid">
-        <div class="card">
-          <h3>Fortinet - Fundamentals of Cybersecurity</h3>
-          <a class="btn" href="certificates/fortinet.pdf" target="_blank">View Certificate</a>
-        </div>
-        <div class="card">
-          <h3>Wazuh Manager Hands-On (HaxCamp)</h3>
-          <a class="btn" href="certificates/wazuh.pdf" target="_blank">View Certificate</a>
-        </div>
-        <div class="card">
-          <h3>Wireshark 3-Day Hands-On (HaxCamp)</h3>
-          <a class="btn" href="certificates/wireshark.pdf" target="_blank">View Certificate</a>
-        </div>
-        <div class="card">
-          <h3>Splunk SIEM 3-Day Hands-On (HaxCamp)</h3>
-          <a class="btn" href="certificates/splunk.pdf" target="_blank">View Certificate</a>
+    <section id="certificates" class="section">
+      <div class="container">
+        <h2>Certificates</h2>
+        <div class="cards-grid">
+          <article class="card">
+            <h3>Fortinet — Fundamentals of Cybersecurity</h3>
+            <a class="btn" href="certificates/fortinet.pdf" target="_blank" rel="noopener">View Certificate</a>
+          </article>
+          <article class="card">
+            <h3>Wazuh Manager Hands-On — HaxCamp</h3>
+            <a class="btn" href="certificates/wazuh.pdf" target="_blank" rel="noopener">View Certificate</a>
+          </article>
+          <article class="card">
+            <h3>Wireshark 3-Day Hands-On — HaxCamp</h3>
+            <a class="btn" href="certificates/wireshark.pdf" target="_blank" rel="noopener">View Certificate</a>
+          </article>
+          <article class="card">
+            <h3>Splunk SIEM 3-Day Hands-On — HaxCamp</h3>
+            <a class="btn" href="certificates/splunk.pdf" target="_blank" rel="noopener">View Certificate</a>
+          </article>
         </div>
       </div>
     </section>
 
     <!-- RESUME -->
-    <section id="resume">
-      <h2>Resume</h2>
-      <a class="btn" href="resume/nilesh_resume.pdf" target="_blank">Download Resume</a>
+    <section id="resume" class="section">
+      <div class="container center">
+        <h2>Resume</h2>
+        <a class="btn" href="resume/nilesh_resume.pdf" target="_blank" rel="noopener">Download Resume</a>
+      </div>
     </section>
 
     <!-- CONTACT -->
-    <section id="contact">
-      <h2>Contact</h2>
-      <div class="contact-grid">
+    <section id="contact" class="section">
+      <div class="container contact-grid">
         <div>
+          <h2>Contact</h2>
           <p>Email: <a href="mailto:nileshpat05@gmail.com">nileshpat05@gmail.com</a></p>
-          <p>GitHub: <a href="https://github.com/nilesh-patel-t" target="_blank">github.com/nilesh-patel-t</a></p>
-          <p>LinkedIn: <a href="https://linkedin.com/in/nilesh-patel-2126b8363" target="_blank">linkedin.com/in/nilesh-patel-2126b8363</a></p>
+          <p>GitHub: <a href="https://github.com/nilesh-patel-t" target="_blank" rel="noopener">github.com/nilesh-patel-t</a></p>
+          <p>LinkedIn: <a href="https://linkedin.com/in/nilesh-patel-2126b8363" target="_blank" rel="noopener">linkedin.com/in/nilesh-patel-2126b8363</a></p>
         </div>
+
         <div>
-          <p>Send me a message anytime — I’m open to collaboration or internship opportunities!</p>
+          <h3>Open to collaboration</h3>
+          <p>If you have an opportunity, internship, or project — message me on LinkedIn or via email. I respond quickly.</p>
         </div>
       </div>
     </section>
   </main>
 
   <footer>
-    <p>© 2025 Nilesh Patel | Built with ❤️ for cybersecurity</p>
+    <div class="container center">
+      <small>© 2025 Nilesh Patel — Built with focus on simplicity &amp; clarity</small>
+    </div>
   </footer>
+
+  <!-- small JS to toggle mobile menu -->
+  <script>
+    (function(){
+      const btn = document.getElementById('nav-toggle');
+      const links = document.getElementById('nav-links');
+      btn.addEventListener('click', () => {
+        links.classList.toggle('open');
+        btn.classList.toggle('open');
+      });
+      // close menu on link click (mobile)
+      Array.from(links.querySelectorAll('a')).forEach(a => a.addEventListener('click', () => {
+        links.classList.remove('open');
+        btn.classList.remove('open');
+      }));
+    })();
+  </script>
 </body>
 </html>
