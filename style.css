@@ -71,6 +71,10 @@ nav ul li a:hover {
   flex-wrap: wrap;
 }
 
+.about-left, .about-right {
+  width: 48%;
+}
+
 .side-section img {
   border-radius: 10px;
   max-width: 100%;
@@ -155,7 +159,7 @@ nav ul li a:hover {
 .contact-grid {
   display: flex;
   justify-content: space-between;
-  align-items: flex-start; /* align columns at top */
+  align-items: flex-start;
   flex-wrap: wrap;
   gap: 30px;
   padding: 40px 20px;
@@ -189,18 +193,36 @@ footer {
 }
 
 @media (max-width: 768px) {
-  /* About section stacks vertically on mobile */
+  /* About section stacks and centers */
   .side-section {
     flex-direction: column;
-    text-align: center;
     align-items: center;
+    text-align: center;
   }
+
+  .about-left, .about-right {
+    width: 100%;
+    max-width: 400px;
+  }
+
   .side-section img {
     margin-top: 20px;
     max-width: 80%;
   }
 
-  /* Contact section stacks and centers */
+  /* Skills grid centered */
+  .skills-grid {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  /* Projects & certificates single column */
+  .projects-grid, .certificates-grid {
+    grid-template-columns: 1fr;
+    justify-items: center;
+  }
+
+  /* Contact section stacks */
   .contact-grid {
     flex-direction: column;
     align-items: center;
@@ -212,3 +234,4 @@ footer {
 main section:last-child {
   padding-bottom: 60px;
 }
+
