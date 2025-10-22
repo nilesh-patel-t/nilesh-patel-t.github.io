@@ -1,43 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Nilesh Patel | Cybersecurity Portfolio</title>
-  <link rel="stylesheet" href="style.css" />
-  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=JetBrains+Mono&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
-  <header>
-    <nav>
-      <h1>Nilesh Patel</h1>
-      <ul>
-        <li><a href="#about">About</a></li>
-        <li><a href="#skills">Skills</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#certificates">Certificates</a></li>
-        <li><a href="#resume">Resume</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-    </nav>
+  <!-- NAVBAR -->
+  <nav>
+    <div class="logo">Nilesh Patel</div>
+    <ul>
+      <li><a href="#about">About</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#certificates">Certificates</a></li>
+      <li><a href="#resume">Resume</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
 
-    <section class="hero">
-      <h2>Cybersecurity Enthusiast | Blue & Red Team Explorer</h2>
-      <p>Passionate about ethical hacking, threat analysis, and network security automation.</p>
-    </section>
-  </header>
+  <!-- HERO SECTION -->
+  <section class="hero">
+    <h1>Nilesh Patel</h1>
+    <p>Cybersecurity Enthusiast | Blue & Red Team Explorer</p>
+  </section>
 
   <main>
-    <section id="about">
-      <h2>About Me</h2>
-      <p>
-        I'm Nilesh Patel, a final-year B.Tech CSE student with a strong interest in cybersecurity.
-        I explore both offensive and defensive security — from penetration testing to SIEM threat monitoring.
-        Currently building my own automated penetration testing toolkit and learning advanced SOC operations.
-      </p>
+    <!-- ABOUT -->
+    <section id="about" class="side-section">
+      <div class="about-left">
+        <h2>About Me</h2>
+        <p>
+          I'm Nilesh Patel, a final-year B.Tech CSE student passionate about cybersecurity. I explore both offensive and defensive security, from penetration testing to SIEM threat monitoring. I am currently building an automated penetration testing toolkit and learning advanced SOC operations.
+        </p>
+      </div>
+      <div class="about-right">
+        <!-- optional image or placeholder -->
+        <img src="https://via.placeholder.com/300x300.png?text=Profile" alt="Profile Photo">
+      </div>
     </section>
 
+    <!-- SKILLS -->
     <section id="skills">
       <h2>Skills</h2>
       <div class="skills-grid">
@@ -52,19 +57,23 @@
       </div>
     </section>
 
+    <!-- PROJECTS -->
     <section id="projects">
       <h2>Projects</h2>
-      <div class="card">
-        <h3>Automated Penetration Testing Toolkit</h3>
-        <p>A CLI-based toolkit designed to automate network and web application assessments for small office networks.</p>
-      </div>
-      <div class="card">
-        <h3>Network Security Audit Report</h3>
-        <p>Comprehensive audit report documenting findings, risk analysis, and mitigations for a simulated SME environment.</p>
-        <a class="btn" href="reports/pentest-report.pdf" target="_blank">View Report</a>
+      <div class="projects-grid">
+        <div class="card">
+          <h3>Automated Penetration Testing Toolkit</h3>
+          <p>A CLI-based toolkit to automate network and web application security assessments for small office networks.</p>
+        </div>
+        <div class="card">
+          <h3>Network Security Audit Report</h3>
+          <p>Comprehensive audit report documenting findings, risk analysis, and mitigations for a simulated SME environment.</p>
+          <a class="btn" href="reports/pentest-report.pdf" target="_blank">View Report</a>
+        </div>
       </div>
     </section>
 
+    <!-- CERTIFICATES -->
     <section id="certificates">
       <h2>Certificates</h2>
       <div class="certificates-grid">
@@ -73,36 +82,44 @@
           <a class="btn" href="certificates/fortinet.pdf" target="_blank">View Certificate</a>
         </div>
         <div class="card">
-          <h3>Wazuh Manager Hands-on - Haxcamp</h3>
+          <h3>Wazuh Manager Hands-On (HaxCamp)</h3>
           <a class="btn" href="certificates/wazuh.pdf" target="_blank">View Certificate</a>
         </div>
         <div class="card">
-          <h3>Wireshark 3-Day Hands-on - Haxcamp</h3>
+          <h3>Wireshark 3-Day Hands-On (HaxCamp)</h3>
           <a class="btn" href="certificates/wireshark.pdf" target="_blank">View Certificate</a>
         </div>
         <div class="card">
-          <h3>Splunk SIEM 3-Day Hands-on - Haxcamp</h3>
+          <h3>Splunk SIEM 3-Day Hands-On (HaxCamp)</h3>
           <a class="btn" href="certificates/splunk.pdf" target="_blank">View Certificate</a>
         </div>
       </div>
     </section>
 
+    <!-- RESUME -->
     <section id="resume">
       <h2>Resume</h2>
       <a class="btn" href="resume/nilesh_resume.pdf" target="_blank">Download Resume</a>
     </section>
 
+    <!-- CONTACT -->
     <section id="contact">
       <h2>Contact</h2>
-      <p>Email: <a href="mailto:nileshpat05@gmail.com">nileshpat05@gmail.com</a></p>
-      <p>GitHub: <a href="https://github.com/nilesh-patel-t" target="_blank">github.com/nilesh-patel-t</a></p>
-      <p>LinkedIn: <a href="https://linkedin.com/in/nilesh-patel-2126b8363" target="_blank">linkedin.com/in/nilesh-patel-2126b8363</a></p>
+      <div class="contact-grid">
+        <div>
+          <p>Email: <a href="mailto:nileshpat05@gmail.com">nileshpat05@gmail.com</a></p>
+          <p>GitHub: <a href="https://github.com/nilesh-patel-t" target="_blank">github.com/nilesh-patel-t</a></p>
+          <p>LinkedIn: <a href="https://linkedin.com/in/nilesh-patel-2126b8363" target="_blank">linkedin.com/in/nilesh-patel-2126b8363</a></p>
+        </div>
+        <div>
+          <p>Send me a message anytime — I’m open to collaboration or internship opportunities!</p>
+        </div>
+      </div>
     </section>
   </main>
 
   <footer>
-    <p>© 2025 Nilesh Patel | Crafted with ❤️ and curiosity for cybersecurity</p>
+    <p>© 2025 Nilesh Patel | Built with ❤️ for cybersecurity</p>
   </footer>
 </body>
 </html>
-
