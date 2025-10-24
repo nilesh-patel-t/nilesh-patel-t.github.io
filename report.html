@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Security Audit Report</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 20px;}
+        h1, h2 { color: #2c3e50; }
+        table { border-collapse: collapse; width: 100%; margin-bottom: 20px;}
+        th, td { border: 1px solid #ddd; padding: 8px; }
+        th { background-color: #34495e; color: white; }
+        tr:nth-child(even){background-color: #f2f2f2;}
+        .exploit { color: #e74c3c;}
+    </style>
+</head>
+<body>
+    <h1>Security Audit Report</h1>
+    <h2>Scan Target: 192.168.0.1/24</h2>
+    <h3>Live Hosts Detected:</h3>
+    <ul>
+    
+        <li>192.168.0.1</li>
+    
+        <li>192.168.0.106</li>
+    
+    </ul>
+    
+    
+        <h3>Host: 192.168.0.1</h3>
+        <table>
+            <thead>
+                <tr>
+                    <th>Port</th>
+                    <th>Service</th>
+                    <th>Product</th>
+                    <th>Version</th>
+                    <th>Known CVEs</th>
+                    <th>Metasploit Exploits</th>
+                </tr>
+            </thead>
+            <tbody>
+            
+                <tr>
+                    <td>22</td>
+                    <td>ssh</td>
+                    <td>Dropbear sshd</td>
+                    <td>2012.55</td>
+                    <td>
+                        
+                            None
+                        
+                    </td>
+                    <td>
+                        
+                            None
+                        
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td>53</td>
+                    <td>tcpwrapped</td>
+                    <td></td>
+                    <td></td>
+                    <td>
+                        
+                            None
+                        
+                    </td>
+                    <td>
+                        
+                            None
+                        
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td>80</td>
+                    <td>http</td>
+                    <td>TP-LINK WAP http config</td>
+                    <td></td>
+                    <td>
+                        
+                            None
+                        
+                    </td>
+                    <td>
+                        
+                            None
+                        
+                    </td>
+                </tr>
+            
+            </tbody>
+        </table>
+    
+        <h3>Host: 192.168.0.106</h3>
+        <table>
+            <thead>
+                <tr>
+                    <th>Port</th>
+                    <th>Service</th>
+                    <th>Product</th>
+                    <th>Version</th>
+                    <th>Known CVEs</th>
+                    <th>Metasploit Exploits</th>
+                </tr>
+            </thead>
+            <tbody>
+            
+                <tr>
+                    <td>135</td>
+                    <td>msrpc</td>
+                    <td>Microsoft Windows RPC</td>
+                    <td></td>
+                    <td>
+                        
+                            None
+                        
+                    </td>
+                    <td>
+                        
+                            None
+                        
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td>139</td>
+                    <td>netbios-ssn</td>
+                    <td>Microsoft Windows netbios-ssn</td>
+                    <td></td>
+                    <td>
+                        
+                            None
+                        
+                    </td>
+                    <td>
+                        
+                            None
+                        
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td>445</td>
+                    <td>microsoft-ds</td>
+                    <td></td>
+                    <td></td>
+                    <td>
+                        
+                            None
+                        
+                    </td>
+                    <td>
+                        
+                            None
+                        
+                    </td>
+                </tr>
+            
+            </tbody>
+        </table>
+    
+</body>
+</html>
